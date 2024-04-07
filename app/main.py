@@ -6,6 +6,8 @@ load_dotenv()
 
 app = Flask(__name__)
 
+# pointless comment added
+
 @app.route('/<random_string>')
 def return_backwards_string(random_string):
 
