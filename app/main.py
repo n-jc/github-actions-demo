@@ -1,10 +1,13 @@
 from flask import Flask
 from dotenv import load_dotenv
+from flask_wtf.csrf import CSRFProtect
 import os
 
 load_dotenv()
 
 app = Flask(__name__)
+csrf = CSRFProtect()
+csrf.init_app(app) # Compliant
 
 # pointless comment added
 
