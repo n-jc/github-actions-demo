@@ -1,6 +1,7 @@
 from flask import Flask
 from dotenv import load_dotenv
 from flask_wtf.csrf import CSRFProtect
+
 import os
 
 load_dotenv()
